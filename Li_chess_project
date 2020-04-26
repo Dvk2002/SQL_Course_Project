@@ -286,7 +286,7 @@ CREATE INDEX moves_game_id_user_id_move_number_idx ON moves (game_id,user_id,mov
 -- Победители завершенных турниров --
 
 SELECT  u.id, u.name, t.name FROM users u, tournaments t, tournaments_winners tw
-WHERE t.status_id = 3 AND tw.winner_id = u.id;
+WHERE t.status_id = 3 AND t.winner_id = u.id;
 
 
 -- Количество русскоязычных подписчиков у пользователя '40' --
