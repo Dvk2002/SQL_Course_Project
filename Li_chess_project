@@ -182,7 +182,7 @@ WHERE status_id =3;
 
 
 UPDATE games g, tournaments t
-SET g.type_game_id = LEFT(t.id,1)
+SET g.type_game_id = t.type_game_id
 WHERE t.id = g.tournament_id;
 
 UPDATE games g, tournaments t 
