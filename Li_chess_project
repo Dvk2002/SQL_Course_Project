@@ -107,7 +107,7 @@ created_at datetime DEFAULT CURRENT_TIMESTAMP
 
 CREATE TABLE trainers (
 id int AUTO_INCREMENT PRIMARY KEY,
-name varchar(256) NOT NULL,
+name varchar(256) NOT NULL
 );
 
 CREATE TABLE boards (
